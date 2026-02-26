@@ -1,27 +1,16 @@
-const rates = {
-    USD: 1,
-    NOK: 10.5,
-    EUR: 0.92
-};
+const apiKey = 'ffce7ebd6732ba3cc33e62eb';
 
-const amountInput = document.getElementById("amount");
-const fromCurrency = document.getElementById("fromCurrency");
-const toCurrency = document.getElementById("toCurrency");
-const result = document.getElementById("result");
-const button = document.getElementById("convertBtn");
+document.getElementById("convertBtn").addEventListener("click", () => {
+	const amount = document.getElementById("amount").value;
+	const from = document.getElementById("fromCurrency").value;
+	const to = document.getElementById("toCurrency").value;
 
-button.addEventListener("click", () => {
-    const amount = Number(amountInput.value);
-
-    if (!amount || amount <= 0) {
-        result.textContent = "Skriv inn et gyldig beløp.";
-        return;
-    }
-
-    const fromRate = rates[fromCurrency.value];
-    const toRate = rates[toCurrency.value];
-
-    const converted = (amount / fromRate) * toRate;
-
-    result.textContent = `${amount} ${fromCurrency.value} = ${converted.toFixed(2)} ${toCurrency.value}`;
+	fetch(`https://v6.exchangerate-api.com/v6/${apiKey}/latest/${from}`)
+		.then(res => res.json())
+		.then(data => {
+			const rate = data.conversion_rates[to];
+			document.getElementById("result").textContent =
+				amount + " " + from + " = " + (amount * rate).toFixed(2) + " " + to;
+		})
+		.catch(err => console.error(err));
 });
