@@ -1,9 +1,9 @@
 import requests
 
 while True:
-    search = input("Skriv inn filmnavn (eller 'q' for å avslutte): ")
+    search = input("Skriv inn filmnavn (eller 'a' for å avslutte): ")
 
-    if search.lower() == "q":
+    if search.lower() == "a":
         print("Program avsluttes.")
         break
 

@@ -5,12 +5,12 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #f0f0f0;
-    background: linear-gradient(#864caf, #ccc)
+    background-color: #ffffff;
+    background: linear-gradient(#a5a5a5, #a3ff9f)
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -24,11 +24,11 @@ input, select, button {
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #a7a7a7;
 }
 
 button {
-    background-color: #864caf;
+    background-color: #5cb75a;
     color: white;
     border: none;
     cursor: pointer;
@@ -42,4 +42,9 @@ button:hover {
 #result, #tekst {
     margin-top: 12px;
     font-weight: bold;
+}
+
+
+.container, p {
+    color: #000000;
 }
