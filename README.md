@@ -1,5 +1,18 @@
 # Ayman sitt API prosjekt
 ## Dette er en brukerveiledning for skoleoppgave i Utvikling. 
+ # Dokumentasjon - Valutta Kalkulator
+ ## Hva jeg har laget
+### Jeg har laget en valuta-kalkulator på nett som lar brukeren konvertere mellom USD, NOK og EUR. Brukeren skriver inn et beløp, velger valutaen de vil konvertere fra og til, og klikker på knappen for å se resultatet. Kalkulatoren henter oppdaterte valutakurser fra ExchangeRate API.
+## Hvordan det fungerer
+### Brukeren skriver inn et beløp og velger valutaer.
+### JavaScript (script.js) sender en forespørsel til API-et og henter siste valutakurser.
+### Resultatet regnes ut (beløp × kurs) og vises på skjermen med to desimaler.
+### Feil håndteres med en enkel melding i konsollen.
+## Designvalg og farger
+## Bakgrunn: lilla (#7367f0) – gir et moderne og tydelig kontrastfullt utseende.
+## Kalkulator-boks: hvit med rundede hjørner og skygge – gjør designet rent og oversiktlig.
+### Knapp: lilla med hover-effekt – tydelig handling for brukeren.
+### Input-felter og dropdowns: enkle, med fokus-effekt for bedre brukervennlighet.
 ## Dette er PY koden min
 
 ```js 
@@ -162,3 +175,5 @@ button:hover {
 </body>
 </html>
 ```
+
+
