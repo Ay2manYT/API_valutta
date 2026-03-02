@@ -10,8 +10,7 @@
 ### Feil håndteres med en enkel melding i konsollen.
 ## Designvalg og farger
 ### Bakgrunn: lilla (#7367f0) – gir et moderne og tydelig kontrastfullt utseende.
-## Kalkulator-boks: hvit med rundede hjørner og skygge – gjør designet rent og oversiktlig.
-### Knapp: lilla med hover-effekt – tydelig handling for brukeren.
+### Kalkulator-boks: hvit med rundede hjørner og skygge – gjør designet rent og oversiktlig. Knapp: lilla med hover-effekt – tydelig handling for brukeren.
 ### Input-felter og dropdowns: enkle, med fokus-effekt for bedre brukervennlighet.
 ## Dette er PY koden min
 
