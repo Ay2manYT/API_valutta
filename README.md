@@ -1,8 +1,13 @@
 # Ayman sitt API prosjekt
 ## Dette er en brukerveiledning for skoleoppgave i Utvikling. 
-Dette er JS koden :
+## Dette er PY koden :
 
 ```js
-let name = Ayman;
-console.log(name);
+import requests, json 
+url = "https://v6.exchangerate-api.com/v6/ffce7ebd6732ba3cc33e62eb/latest/USD" 
+
+response = requests.get(url) 
+
+data = response.json() 
+print (data)
 ```
