@@ -3,7 +3,7 @@
 Dette er vanlig tekst.
 Dette er JS kode:
 
-´´´js
-let name = Joakim;
+```js
+let name = Ayman;
 console.log(name);
-´´´
+```
